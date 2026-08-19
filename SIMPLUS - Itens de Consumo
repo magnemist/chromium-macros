@@ -1,0 +1,629 @@
+{
+  "Name": "Consumo",
+  "CreationDate": "2026-8-19",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "https://app.simplus.ufv.br/user/solicitacao.jsf",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "linkText=Incluir nova solicitação",
+      "Value": "",
+      "Targets": [
+        "linkText=Incluir nova solicitação",
+        "id=solicitacoes:_adding",
+        "name=solicitacoes:_adding",
+        "xpath=//*[@id=\"solicitacoes:_adding\"]",
+        "xpath=//a[@id='solicitacoes:_adding']",
+        "xpath=//div[2]/div/a",
+        "css=#solicitacoes:_adding"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "waitForElementNotPresent",
+      "Target": "id=proxima1",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "id=proxima1",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=#select2-formnovoj_idt65Inner-container",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//li[contains(.,'Custeio - Funcionamento F0')]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "1200",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=#select2-formnovoj_idt75Inner-container",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//li[contains(.,'02 - Fortalecer a política institucional de apoio acadêmico e pedagógico')]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "1200",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=#select2-formnovoj_idt78Inner-container",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//li[contains(.,'Graduação e área administrativa')]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "1200",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=#select2-formnovoj_idt81Inner-container",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//li[contains(.,'19 - Ensino e Gestão Administrativa')]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "1200",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "css=#select2-formnovoj_idt84Inner-container",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//li[contains(.,'Material de Consumo - MC')]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"formnovo:orgaointeressado\"]/div/span/span/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"formnovo:orgaointeressado\"]/div/span/span/span",
+        "xpath=//div[2]/div/div/div/div/div/div/span/span/span",
+        "css=#formnovo:orgaointeressado > div > span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open.select2-container--focus > span.selection > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=/html/body/span/span/span/input",
+      "Value": "dec",
+      "Targets": [
+        "xpath=/html/body/span/span/span/input",
+        "xpath=//input[@type='search']",
+        "xpath=//span/input",
+        "css=body > span > span > span.select2-search.select2-search--dropdown > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=input_formnovo:nomeinteressado",
+      "Value": "",
+      "Targets": [
+        "id=input_formnovo:nomeinteressado",
+        "name=input_formnovo:nomeinteressado",
+        "xpath=//*[@id=\"input_formnovo:nomeinteressado\"]",
+        "xpath=//input[@id='input_formnovo:nomeinteressado']",
+        "xpath=//div[2]/div/div/div/input",
+        "css=#input_formnovo:nomeinteressado"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=input_formnovo:nomeinteressado",
+      "Value": "carlos pedro da silva ribeiro",
+      "Targets": [
+        "id=input_formnovo:nomeinteressado",
+        "name=input_formnovo:nomeinteressado",
+        "xpath=//*[@id=\"input_formnovo:nomeinteressado\"]",
+        "xpath=//input[@id='input_formnovo:nomeinteressado']",
+        "xpath=//div[2]/div/div/div/input",
+        "css=#input_formnovo:nomeinteressado"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=input_formnovo:telinteressado",
+      "Value": "",
+      "Targets": [
+        "id=input_formnovo:telinteressado",
+        "name=input_formnovo:telinteressado",
+        "xpath=//*[@id=\"input_formnovo:telinteressado\"]",
+        "xpath=//input[@id='input_formnovo:telinteressado']",
+        "xpath=//div[3]/div/div/div/input",
+        "css=#input_formnovo:telinteressado"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=input_formnovo:telinteressado",
+      "Value": "31996984678",
+      "Targets": [
+        "id=input_formnovo:telinteressado",
+        "name=input_formnovo:telinteressado",
+        "xpath=//*[@id=\"input_formnovo:telinteressado\"]",
+        "xpath=//input[@id='input_formnovo:telinteressado']",
+        "xpath=//div[3]/div/div/div/input",
+        "css=#input_formnovo:telinteressado"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=input_formnovo:emailinteressado",
+      "Value": "",
+      "Targets": [
+        "id=input_formnovo:emailinteressado",
+        "name=input_formnovo:emailinteressado",
+        "xpath=//*[@id=\"input_formnovo:emailinteressado\"]",
+        "xpath=//input[@id='input_formnovo:emailinteressado']",
+        "xpath=//div[4]/div/div/div/input",
+        "css=#input_formnovo:emailinteressado"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=input_formnovo:emailinteressado",
+      "Value": "carlos.pedro@ufv.br",
+      "Targets": [
+        "id=input_formnovo:emailinteressado",
+        "name=input_formnovo:emailinteressado",
+        "xpath=//*[@id=\"input_formnovo:emailinteressado\"]",
+        "xpath=//input[@id='input_formnovo:emailinteressado']",
+        "xpath=//div[4]/div/div/div/input",
+        "css=#input_formnovo:emailinteressado"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=input_formnovo:telsolicitante",
+      "Value": "",
+      "Targets": [
+        "id=input_formnovo:telsolicitante",
+        "name=input_formnovo:telsolicitante",
+        "xpath=//*[@id=\"input_formnovo:telsolicitante\"]",
+        "xpath=//input[@id='input_formnovo:telsolicitante']",
+        "xpath=//div[5]/div/div/input",
+        "css=#input_formnovo:telsolicitante"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=input_formnovo:telsolicitante",
+      "Value": "3136126580",
+      "Targets": [
+        "id=input_formnovo:telsolicitante",
+        "name=input_formnovo:telsolicitante",
+        "xpath=//*[@id=\"input_formnovo:telsolicitante\"]",
+        "xpath=//input[@id='input_formnovo:telsolicitante']",
+        "xpath=//div[5]/div/div/input",
+        "css=#input_formnovo:telsolicitante"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"formnovo:j_idt47\"]/div/div",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"formnovo:j_idt47\"]/div/div",
+        "xpath=//div[2]/div/div/div/div",
+        "css=#formnovo:j_idt47 > div > div"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"formnovo:orgaointeressado\"]/div/span/span/span",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"formnovo:orgaointeressado\"]/div/span/span/span",
+        "xpath=//div[2]/div/div/div/div/div/div/span/span/span",
+        "css=#formnovo:orgaointeressado > div > span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open > span.selection > span"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "300",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//li[contains(.,'Departamento de Engenharia Civil - DEC')]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=input_formnovo:j_idt58",
+      "Value": "",
+      "Targets": [
+        "id=input_formnovo:j_idt58",
+        "name=input_formnovo:j_idt58",
+        "xpath=//*[@id=\"input_formnovo:j_idt58\"]",
+        "xpath=//textarea[@id='input_formnovo:j_idt58']",
+        "xpath=//textarea",
+        "css=#input_formnovo:j_idt58"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=input_formnovo:j_idt58",
+      "Value": "LESA - Laboratório de Engenharia Sanitária e Ambiental",
+      "Targets": [
+        "id=input_formnovo:j_idt58",
+        "name=input_formnovo:j_idt58",
+        "xpath=//*[@id=\"input_formnovo:j_idt58\"]",
+        "xpath=//textarea[@id='input_formnovo:j_idt58']",
+        "xpath=//textarea",
+        "css=#input_formnovo:j_idt58"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=formnovo:j_idt59",
+      "Value": "",
+      "Targets": [
+        "id=formnovo:j_idt59",
+        "xpath=//*[@id=\"formnovo:j_idt59\"]",
+        "xpath=//div[@id='formnovo:j_idt59']",
+        "xpath=//div[2]/div[2]/div/div[2]",
+        "css=#formnovo:j_idt59"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=input_formnovo:j_idt59",
+      "Value": "",
+      "Targets": [
+        "id=input_formnovo:j_idt59",
+        "name=input_formnovo:j_idt59",
+        "xpath=//*[@id=\"input_formnovo:j_idt59\"]",
+        "xpath=//textarea[@id='input_formnovo:j_idt59']",
+        "xpath=//div[2]/textarea",
+        "css=#input_formnovo:j_idt59"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=input_formnovo:j_idt59",
+      "Value": "",
+      "Targets": [
+        "id=input_formnovo:j_idt59",
+        "name=input_formnovo:j_idt59",
+        "xpath=//*[@id=\"input_formnovo:j_idt59\"]",
+        "xpath=//textarea[@id='input_formnovo:j_idt59']",
+        "xpath=//div[2]/textarea",
+        "css=#input_formnovo:j_idt59"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=input_formnovo:j_idt59",
+      "Value": "Material de limpeza, higiene, papelaria.",
+      "Targets": [
+        "id=input_formnovo:j_idt59",
+        "name=input_formnovo:j_idt59",
+        "xpath=//*[@id=\"input_formnovo:j_idt59\"]",
+        "xpath=//textarea[@id='input_formnovo:j_idt59']",
+        "xpath=//div[2]/textarea",
+        "css=#input_formnovo:j_idt59"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "id=j_idt88",
+      "Value": "",
+      "Targets": [
+        "id=j_idt88",
+        "name=j_idt88",
+        "xpath=//*[@id=\"j_idt88\"]",
+        "xpath=//button[@id='j_idt88']",
+        "xpath=//div[5]/button",
+        "css=#j_idt88"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:j_idt110",
+      "Value": "",
+      "Targets": [
+        "id=itens:j_idt110",
+        "name=itens:j_idt110",
+        "xpath=//*[@id=\"itens:j_idt110\"]",
+        "xpath=//button[@id='itens:j_idt110']",
+        "xpath=//div[2]/div/button",
+        "css=#itens:j_idt110"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+      "Value": "",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+        "name=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner\"]",
+        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner']",
+        "xpath=//div[6]/select",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "select",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+      "Value": "label=Sim",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+        "name=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner\"]",
+        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner']",
+        "xpath=//div[6]/select",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+      "Value": "",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+        "name=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner\"]",
+        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner']",
+        "xpath=//div[6]/select",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt75\"]/label",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt75\"]/label",
+        "xpath=//div[5]/label",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt75 > label"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner",
+      "Value": "",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner",
+        "name=itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner\"]",
+        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner']",
+        "xpath=//div[5]/select",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
+      "Value": "",
+      "Targets": [
+        "id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
+        "name=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
+        "xpath=//*[@id=\"input_itens:FormSelecaoMaterial:tbmateriais:j_idt71\"]",
+        "xpath=//input[@id='input_itens:FormSelecaoMaterial:tbmateriais:j_idt71']",
+        "xpath=//div[3]/input",
+        "css=#input_itens:FormSelecaoMaterial:tbmateriais:j_idt71"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
+      "Value": "de",
+      "Targets": [
+        "id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
+        "name=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
+        "xpath=//*[@id=\"input_itens:FormSelecaoMaterial:tbmateriais:j_idt71\"]",
+        "xpath=//input[@id='input_itens:FormSelecaoMaterial:tbmateriais:j_idt71']",
+        "xpath=//div[3]/input",
+        "css=#input_itens:FormSelecaoMaterial:tbmateriais:j_idt71"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt75",
+      "Value": "",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt75",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt75\"]",
+        "xpath=//div[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt75']",
+        "xpath=//div/div[5]",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt75"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+      "Value": "",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+        "name=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu\"]",
+        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu']",
+        "xpath=//div[2]/select",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "select",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+      "Value": "label=100",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+        "name=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu\"]",
+        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu']",
+        "xpath=//div[2]/select",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+      "Value": "",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+        "name=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu\"]",
+        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu']",
+        "xpath=//div[2]/select",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand",
+      "Value": "",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand",
+        "name=itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand\"]",
+        "xpath=//button[@id='itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand']",
+        "xpath=//div[2]/div/button",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_applyFilters",
+      "Value": "",
+      "Targets": [
+        "id=itens:FormSelecaoMaterial:tbmateriais:_applyFilters",
+        "name=itens:FormSelecaoMaterial:tbmateriais:_applyFilters",
+        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_applyFilters\"]",
+        "xpath=//button[@id='itens:FormSelecaoMaterial:tbmateriais:_applyFilters']",
+        "xpath=//div/div[2]/button",
+        "css=#itens:FormSelecaoMaterial:tbmateriais:_applyFilters"
+      ],
+      "Description": ""
+    }
+  ]
+}
