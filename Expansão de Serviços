@@ -1,0 +1,36 @@
+uiv.open('https://central-servicos.ufv.br/solicitacoes/criar?campus=1');
+
+uiv.$(
+    'xpath=//a[contains(normalize-space(.),"Ver Catálogo de Serviços")]'
+);
+
+uiv.page.click('linkText=Ver Catálogo de Serviços...');
+
+uiv.log('CATÁLOGO OK', 'green');
+
+const quantidade = uiv.eval(`
+    const paineis = document.querySelectorAll(
+        '#conteudo .panel-body.collapse[id^="catalogo_"]'
+    );
+
+    paineis.forEach(painel => {
+        painel.classList.add('in');
+        painel.setAttribute('aria-expanded', 'true');
+        painel.style.height = '';
+    });
+
+    const botoes = document.querySelectorAll(
+        '#conteudo .panel-heading[data-toggle="collapse"][data-target^="#catalogo_"]'
+    );
+
+    botoes.forEach(botao => {
+        botao.setAttribute('aria-expanded', 'true');
+    });
+
+    return paineis.length;
+`);
+
+uiv.log(
+    'CATÁLOGOS EXPANDIDOS: ' + quantidade,
+    'green'
+);
