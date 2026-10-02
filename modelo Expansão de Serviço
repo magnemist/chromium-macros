@@ -40,7 +40,7 @@ const CONFIG = {
     // Informe exatamente o número do perfil que deve ser
     // selecionado na tela.
     //
-    perfil: '11230'
+    perfil: 'NNNNNN'
 
 
 };
