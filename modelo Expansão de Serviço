@@ -38,7 +38,7 @@ const CONFIG = {
     // --------------------------------------------------------
     //
     // Informe exatamente o número do perfil que deve ser
-    // selecionado na tela.
+    // selecionado na tela (número de matrícula sem o que vem depois do traço).
     //
     perfil: 'NNNNNN'
 
