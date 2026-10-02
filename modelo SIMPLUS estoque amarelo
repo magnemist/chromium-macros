@@ -1,0 +1,560 @@
+// ============================================================
+// SIMPLUS - SOLICITAÇÃO DE MATERIAL DE CONSUMO
+// MODELO PARAMETRIZÁVEL
+// ============================================================
+//
+// Automação para criação de solicitação de material de consumo
+// no SIMPLUS/UFV.
+//
+// INSTRUÇÕES:
+// 1. Altere somente os valores na seção CONFIGURAÇÃO.
+// 2. Não é necessário criar outro arquivo.
+// 3. Salve este arquivo como .js no Ui.Vision.
+// ============================================================
+
+
+// ============================================================
+// CONFIGURAÇÃO
+// ============================================================
+//
+// >>> EDITE SOMENTE ESTA SEÇÃO <<<
+//
+// Os valores abaixo são exemplos.
+// Substitua pelos dados do usuário antes de executar.
+// ============================================================
+
+const CONFIG = {
+
+    // --------------------------------------------------------
+    // DADOS DO INTERESSADO
+    // --------------------------------------------------------
+
+    nomeInteressado:
+        'SEU NOME COMPLETO',
+
+    telefoneInteressado:
+        'SEU TELEFONE',
+
+    emailInteressado:
+        'SEU E-MAIL',
+
+    telefoneSolicitante:
+        'TELEFONE DO SOLICITANTE',
+
+
+    // --------------------------------------------------------
+    // ÓRGÃO / LOCAL
+    // --------------------------------------------------------
+
+    pesquisaOrgao:
+        'TERMO PARA PESQUISAR O ÓRGÃO',
+
+    orgao:
+        'NOME COMPLETO DO ÓRGÃO',
+
+    local:
+        'LOCAL DE ENTREGA / UTILIZAÇÃO',
+
+
+    // --------------------------------------------------------
+    // DESCRIÇÃO DA SOLICITAÇÃO
+    // --------------------------------------------------------
+
+    descricao:
+        'DESCRIÇÃO DA SOLICITAÇÃO',
+
+
+    // --------------------------------------------------------
+    // PESQUISA DE MATERIAL
+    // --------------------------------------------------------
+
+    pesquisaMaterial:
+        'TERMO DE PESQUISA',
+
+
+    // --------------------------------------------------------
+    // FILTROS DO CATÁLOGO
+    // --------------------------------------------------------
+
+    classificacaoMaterial:
+        'Despesas Correntes/Custeio/Consumo',
+
+    materialAtivo:
+        'Sim',
+
+    quantidadeRegistros:
+        '100'
+
+};
+
+
+// ============================================================
+// 1. ABRIR SIMPLUS
+// ============================================================
+
+uiv.goto(
+    'https://app.simplus.ufv.br/user/solicitacao.jsf'
+);
+
+uiv.log(
+    'PÁGINA DO SIMPLUS ABERTA',
+    'green'
+);
+
+
+// ============================================================
+// 2. NOVA SOLICITAÇÃO
+// ============================================================
+
+uiv.$(
+    'id=solicitacoes:_adding'
+);
+
+uiv.page.click(
+    'id=solicitacoes:_adding'
+);
+
+uiv.log(
+    'NOVA SOLICITAÇÃO SELECIONADA',
+    'green'
+);
+
+
+// ============================================================
+// 3. AVANÇAR PARA O FORMULÁRIO
+// ============================================================
+
+uiv.$(
+    'id=proxima1'
+);
+
+uiv.page.click(
+    'id=proxima1'
+);
+
+uiv.log(
+    'CHEGOU À ETAPA DO FORMULÁRIO',
+    'green'
+);
+
+
+// ============================================================
+// 4. CUSTEIO
+// ============================================================
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt65Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "Custeio - Funcionamento F0")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "Custeio - Funcionamento F0")]'
+);
+
+uiv.log(
+    'CUSTEIO - FUNCIONAMENTO F0 SELECIONADO',
+    'green'
+);
+
+
+// ============================================================
+// 5. OBJETIVO
+// ============================================================
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt75Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "02 - Fortalecer a política institucional de apoio acadêmico e pedagógico")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "02 - Fortalecer a política institucional de apoio acadêmico e pedagógico")]'
+);
+
+uiv.log(
+    'OBJETIVO SELECIONADO',
+    'green'
+);
+
+
+// ============================================================
+// 6. ÁREA
+// ============================================================
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt78Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "Graduação e área administrativa")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "Graduação e área administrativa")]'
+);
+
+uiv.log(
+    'ÁREA SELECIONADA',
+    'green'
+);
+
+
+// ============================================================
+// 7. PROGRAMA
+// ============================================================
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt81Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "19 - Ensino e Gestão Administrativa")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "19 - Ensino e Gestão Administrativa")]'
+);
+
+uiv.log(
+    'PROGRAMA SELECIONADO',
+    'green'
+);
+
+
+// ============================================================
+// 8. MATERIAL DE CONSUMO
+// ============================================================
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt84Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "Material de Consumo - MC")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "Material de Consumo - MC")]'
+);
+
+uiv.log(
+    'MATERIAL DE CONSUMO SELECIONADO',
+    'green'
+);
+
+
+// ============================================================
+// 9. PESQUISAR ÓRGÃO
+// ============================================================
+
+uiv.page.click(
+    'xpath=//*[@id="formnovo:orgaointeressado"]/div/span/span/span'
+);
+
+uiv.page.fill(
+    'xpath=/html/body/span/span/span/input',
+    CONFIG.pesquisaOrgao
+);
+
+uiv.log(
+    'PESQUISA DE ÓRGÃO REALIZADA',
+    'green'
+);
+
+
+// ============================================================
+// 10. DADOS DO INTERESSADO
+// ============================================================
+
+uiv.page.fill(
+    'id=input_formnovo:nomeinteressado',
+    CONFIG.nomeInteressado
+);
+
+uiv.page.fill(
+    'id=input_formnovo:telinteressado',
+    CONFIG.telefoneInteressado
+);
+
+uiv.page.fill(
+    'id=input_formnovo:emailinteressado',
+    CONFIG.emailInteressado
+);
+
+uiv.page.fill(
+    'id=input_formnovo:telsolicitante',
+    CONFIG.telefoneSolicitante
+);
+
+
+// ============================================================
+// 11. SELECIONAR DEPARTAMENTO / ÓRGÃO
+// ============================================================
+
+uiv.page.click(
+    'xpath=//*[@id="formnovo:j_idt47"]/div/div'
+);
+
+uiv.page.click(
+    'xpath=//*[@id="formnovo:orgaointeressado"]/div/span/span/span'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "' +
+    CONFIG.orgao +
+    '")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "' +
+    CONFIG.orgao +
+    '")]'
+);
+
+uiv.log(
+    'ÓRGÃO SELECIONADO: ' +
+    CONFIG.orgao,
+    'green'
+);
+
+
+// ============================================================
+// 12. LOCAL
+// ============================================================
+
+uiv.page.fill(
+    'id=input_formnovo:j_idt58',
+    CONFIG.local
+);
+
+uiv.log(
+    'LOCAL PREENCHIDO',
+    'green'
+);
+
+
+// ============================================================
+// 13. DESCRIÇÃO
+// ============================================================
+
+uiv.page.click(
+    'id=formnovo:j_idt59'
+);
+
+uiv.page.fill(
+    'id=input_formnovo:j_idt59',
+    CONFIG.descricao
+);
+
+uiv.log(
+    'DESCRIÇÃO PREENCHIDA',
+    'green'
+);
+
+
+// ============================================================
+// 14. CONCLUIR FORMULÁRIO PRINCIPAL
+// ============================================================
+
+uiv.$(
+    'id=j_idt88'
+);
+
+uiv.page.click(
+    'id=j_idt88'
+);
+
+uiv.log(
+    'FORMULÁRIO PRINCIPAL CONCLUÍDO',
+    'green'
+);
+
+
+// ============================================================
+// 15. AGUARDAR ATUALIZAÇÃO DA ÁREA DE ITENS
+// ============================================================
+//
+// IMPORTANTE:
+// O botão correto nesta etapa é:
+//
+//     itens:j_idt110
+//
+// Não utilizar:
+//
+//     itens:j_idt97
+// ============================================================
+
+uiv.log(
+    'AGUARDANDO ATUALIZAÇÃO DA ÁREA DE ITENS...',
+    'yellow'
+);
+
+uiv.$(
+    'id=itens:j_idt110'
+);
+
+uiv.log(
+    'BOTÃO CATÁLOGO ENCONTRADO',
+    'green'
+);
+
+
+// ============================================================
+// 16. CLICAR EM CATÁLOGO
+// ============================================================
+//
+// O botão utiliza AJAX e precisa de um clique confiável.
+// Por isso usamos browser.click().
+// ============================================================
+
+uiv.browser.click(
+    'id=itens:j_idt110'
+);
+
+uiv.log(
+    'CATÁLOGO CLICADO',
+    'green'
+);
+
+
+// ============================================================
+// 17. AGUARDAR TELA DE SELEÇÃO DE MATERIAL
+// ============================================================
+
+uiv.log(
+    'AGUARDANDO TELA DE SELEÇÃO DE MATERIAL...',
+    'yellow'
+);
+
+uiv.$(
+    'id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71'
+);
+
+uiv.log(
+    'TELA DE SELEÇÃO DE MATERIAL ABERTA',
+    'green'
+);
+
+
+// ============================================================
+// 18. PESQUISA DO MATERIAL
+// ============================================================
+
+uiv.page.click(
+    'id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71'
+);
+
+uiv.page.fill(
+    'id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71',
+    CONFIG.pesquisaMaterial
+);
+
+uiv.log(
+    'PESQUISA DE MATERIAL PREENCHIDA: ' +
+    CONFIG.pesquisaMaterial,
+    'green'
+);
+
+
+// ============================================================
+// 19. FILTRO DE CLASSIFICAÇÃO
+// ============================================================
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt72Inner'
+);
+
+uiv.page.selectOption(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt72Inner',
+    CONFIG.classificacaoMaterial
+);
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt72Inner'
+);
+
+uiv.log(
+    'CLASSIFICAÇÃO SELECIONADA',
+    'green'
+);
+
+
+// ============================================================
+// 20. FILTRO "ATIVO"
+// ============================================================
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner'
+);
+
+uiv.page.selectOption(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner',
+    CONFIG.materialAtivo
+);
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner'
+);
+
+uiv.log(
+    'FILTRO ATIVO = ' +
+    CONFIG.materialAtivo,
+    'green'
+);
+
+
+// ============================================================
+// 21. MOSTRAR REGISTROS
+// ============================================================
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu'
+);
+
+uiv.page.selectOption(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu',
+    CONFIG.quantidadeRegistros
+);
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu'
+);
+
+uiv.log(
+    'QUANTIDADE DE REGISTROS = ' +
+    CONFIG.quantidadeRegistros,
+    'green'
+);
+
+
+// ============================================================
+// 22. APLICAR FILTROS
+// ============================================================
+
+uiv.$(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_applyFilters'
+);
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_applyFilters'
+);
+
+uiv.log(
+    'FILTROS APLICADOS',
+    'green'
+);
+
+
+// ============================================================
+// FIM
+// ============================================================
+
+uiv.log(
+    'FILTROS DE MATERIAL CONCLUÍDOS — PRONTO PARA A PRÓXIMA ETAPA',
+    'green'
+);
