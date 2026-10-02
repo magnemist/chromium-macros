@@ -1,629 +1,380 @@
-{
-  "Name": "Consumo",
-  "CreationDate": "2026-8-19",
-  "Commands": [
-    {
-      "Command": "open",
-      "Target": "https://app.simplus.ufv.br/user/solicitacao.jsf",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "linkText=Incluir nova solicitação",
-      "Value": "",
-      "Targets": [
-        "linkText=Incluir nova solicitação",
-        "id=solicitacoes:_adding",
-        "name=solicitacoes:_adding",
-        "xpath=//*[@id=\"solicitacoes:_adding\"]",
-        "xpath=//a[@id='solicitacoes:_adding']",
-        "xpath=//div[2]/div/a",
-        "css=#solicitacoes:_adding"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "waitForElementNotPresent",
-      "Target": "id=proxima1",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "clickAndWait",
-      "Target": "id=proxima1",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "300",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "css=#select2-formnovoj_idt65Inner-container",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "300",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//li[contains(.,'Custeio - Funcionamento F0')]",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "1200",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "css=#select2-formnovoj_idt75Inner-container",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "300",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//li[contains(.,'02 - Fortalecer a política institucional de apoio acadêmico e pedagógico')]",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "1200",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "css=#select2-formnovoj_idt78Inner-container",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "300",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//li[contains(.,'Graduação e área administrativa')]",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "1200",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "css=#select2-formnovoj_idt81Inner-container",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "300",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//li[contains(.,'19 - Ensino e Gestão Administrativa')]",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "1200",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "css=#select2-formnovoj_idt84Inner-container",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "300",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//li[contains(.,'Material de Consumo - MC')]",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//*[@id=\"formnovo:orgaointeressado\"]/div/span/span/span",
-      "Value": "",
-      "Targets": [
-        "xpath=//*[@id=\"formnovo:orgaointeressado\"]/div/span/span/span",
-        "xpath=//div[2]/div/div/div/div/div/div/span/span/span",
-        "css=#formnovo:orgaointeressado > div > span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open.select2-container--focus > span.selection > span"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "type",
-      "Target": "xpath=/html/body/span/span/span/input",
-      "Value": "dec",
-      "Targets": [
-        "xpath=/html/body/span/span/span/input",
-        "xpath=//input[@type='search']",
-        "xpath=//span/input",
-        "css=body > span > span > span.select2-search.select2-search--dropdown > input"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=input_formnovo:nomeinteressado",
-      "Value": "",
-      "Targets": [
-        "id=input_formnovo:nomeinteressado",
-        "name=input_formnovo:nomeinteressado",
-        "xpath=//*[@id=\"input_formnovo:nomeinteressado\"]",
-        "xpath=//input[@id='input_formnovo:nomeinteressado']",
-        "xpath=//div[2]/div/div/div/input",
-        "css=#input_formnovo:nomeinteressado"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "type",
-      "Target": "id=input_formnovo:nomeinteressado",
-      "Value": "carlos pedro da silva ribeiro",
-      "Targets": [
-        "id=input_formnovo:nomeinteressado",
-        "name=input_formnovo:nomeinteressado",
-        "xpath=//*[@id=\"input_formnovo:nomeinteressado\"]",
-        "xpath=//input[@id='input_formnovo:nomeinteressado']",
-        "xpath=//div[2]/div/div/div/input",
-        "css=#input_formnovo:nomeinteressado"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=input_formnovo:telinteressado",
-      "Value": "",
-      "Targets": [
-        "id=input_formnovo:telinteressado",
-        "name=input_formnovo:telinteressado",
-        "xpath=//*[@id=\"input_formnovo:telinteressado\"]",
-        "xpath=//input[@id='input_formnovo:telinteressado']",
-        "xpath=//div[3]/div/div/div/input",
-        "css=#input_formnovo:telinteressado"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "type",
-      "Target": "id=input_formnovo:telinteressado",
-      "Value": "31996984678",
-      "Targets": [
-        "id=input_formnovo:telinteressado",
-        "name=input_formnovo:telinteressado",
-        "xpath=//*[@id=\"input_formnovo:telinteressado\"]",
-        "xpath=//input[@id='input_formnovo:telinteressado']",
-        "xpath=//div[3]/div/div/div/input",
-        "css=#input_formnovo:telinteressado"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=input_formnovo:emailinteressado",
-      "Value": "",
-      "Targets": [
-        "id=input_formnovo:emailinteressado",
-        "name=input_formnovo:emailinteressado",
-        "xpath=//*[@id=\"input_formnovo:emailinteressado\"]",
-        "xpath=//input[@id='input_formnovo:emailinteressado']",
-        "xpath=//div[4]/div/div/div/input",
-        "css=#input_formnovo:emailinteressado"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "type",
-      "Target": "id=input_formnovo:emailinteressado",
-      "Value": "carlos.pedro@ufv.br",
-      "Targets": [
-        "id=input_formnovo:emailinteressado",
-        "name=input_formnovo:emailinteressado",
-        "xpath=//*[@id=\"input_formnovo:emailinteressado\"]",
-        "xpath=//input[@id='input_formnovo:emailinteressado']",
-        "xpath=//div[4]/div/div/div/input",
-        "css=#input_formnovo:emailinteressado"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=input_formnovo:telsolicitante",
-      "Value": "",
-      "Targets": [
-        "id=input_formnovo:telsolicitante",
-        "name=input_formnovo:telsolicitante",
-        "xpath=//*[@id=\"input_formnovo:telsolicitante\"]",
-        "xpath=//input[@id='input_formnovo:telsolicitante']",
-        "xpath=//div[5]/div/div/input",
-        "css=#input_formnovo:telsolicitante"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "type",
-      "Target": "id=input_formnovo:telsolicitante",
-      "Value": "3136126580",
-      "Targets": [
-        "id=input_formnovo:telsolicitante",
-        "name=input_formnovo:telsolicitante",
-        "xpath=//*[@id=\"input_formnovo:telsolicitante\"]",
-        "xpath=//input[@id='input_formnovo:telsolicitante']",
-        "xpath=//div[5]/div/div/input",
-        "css=#input_formnovo:telsolicitante"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//*[@id=\"formnovo:j_idt47\"]/div/div",
-      "Value": "",
-      "Targets": [
-        "xpath=//*[@id=\"formnovo:j_idt47\"]/div/div",
-        "xpath=//div[2]/div/div/div/div",
-        "css=#formnovo:j_idt47 > div > div"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "300",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//*[@id=\"formnovo:orgaointeressado\"]/div/span/span/span",
-      "Value": "",
-      "Targets": [
-        "xpath=//*[@id=\"formnovo:orgaointeressado\"]/div/span/span/span",
-        "xpath=//div[2]/div/div/div/div/div/div/span/span/span",
-        "css=#formnovo:orgaointeressado > div > span.select2.select2-container.select2-container--default.select2-container--below.select2-container--open > span.selection > span"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "300",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//li[contains(.,'Departamento de Engenharia Civil - DEC')]",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "pause",
-      "Target": "2000",
-      "Value": "",
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=input_formnovo:j_idt58",
-      "Value": "",
-      "Targets": [
-        "id=input_formnovo:j_idt58",
-        "name=input_formnovo:j_idt58",
-        "xpath=//*[@id=\"input_formnovo:j_idt58\"]",
-        "xpath=//textarea[@id='input_formnovo:j_idt58']",
-        "xpath=//textarea",
-        "css=#input_formnovo:j_idt58"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "type",
-      "Target": "id=input_formnovo:j_idt58",
-      "Value": "LESA - Laboratório de Engenharia Sanitária e Ambiental",
-      "Targets": [
-        "id=input_formnovo:j_idt58",
-        "name=input_formnovo:j_idt58",
-        "xpath=//*[@id=\"input_formnovo:j_idt58\"]",
-        "xpath=//textarea[@id='input_formnovo:j_idt58']",
-        "xpath=//textarea",
-        "css=#input_formnovo:j_idt58"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=formnovo:j_idt59",
-      "Value": "",
-      "Targets": [
-        "id=formnovo:j_idt59",
-        "xpath=//*[@id=\"formnovo:j_idt59\"]",
-        "xpath=//div[@id='formnovo:j_idt59']",
-        "xpath=//div[2]/div[2]/div/div[2]",
-        "css=#formnovo:j_idt59"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=input_formnovo:j_idt59",
-      "Value": "",
-      "Targets": [
-        "id=input_formnovo:j_idt59",
-        "name=input_formnovo:j_idt59",
-        "xpath=//*[@id=\"input_formnovo:j_idt59\"]",
-        "xpath=//textarea[@id='input_formnovo:j_idt59']",
-        "xpath=//div[2]/textarea",
-        "css=#input_formnovo:j_idt59"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=input_formnovo:j_idt59",
-      "Value": "",
-      "Targets": [
-        "id=input_formnovo:j_idt59",
-        "name=input_formnovo:j_idt59",
-        "xpath=//*[@id=\"input_formnovo:j_idt59\"]",
-        "xpath=//textarea[@id='input_formnovo:j_idt59']",
-        "xpath=//div[2]/textarea",
-        "css=#input_formnovo:j_idt59"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "type",
-      "Target": "id=input_formnovo:j_idt59",
-      "Value": "Material de limpeza, higiene, papelaria.",
-      "Targets": [
-        "id=input_formnovo:j_idt59",
-        "name=input_formnovo:j_idt59",
-        "xpath=//*[@id=\"input_formnovo:j_idt59\"]",
-        "xpath=//textarea[@id='input_formnovo:j_idt59']",
-        "xpath=//div[2]/textarea",
-        "css=#input_formnovo:j_idt59"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "clickAndWait",
-      "Target": "id=j_idt88",
-      "Value": "",
-      "Targets": [
-        "id=j_idt88",
-        "name=j_idt88",
-        "xpath=//*[@id=\"j_idt88\"]",
-        "xpath=//button[@id='j_idt88']",
-        "xpath=//div[5]/button",
-        "css=#j_idt88"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:j_idt110",
-      "Value": "",
-      "Targets": [
-        "id=itens:j_idt110",
-        "name=itens:j_idt110",
-        "xpath=//*[@id=\"itens:j_idt110\"]",
-        "xpath=//button[@id='itens:j_idt110']",
-        "xpath=//div[2]/div/button",
-        "css=#itens:j_idt110"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-      "Value": "",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-        "name=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner\"]",
-        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner']",
-        "xpath=//div[6]/select",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "select",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-      "Value": "label=Sim",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-        "name=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner\"]",
-        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner']",
-        "xpath=//div[6]/select",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-      "Value": "",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-        "name=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner\"]",
-        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner']",
-        "xpath=//div[6]/select",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt75\"]/label",
-      "Value": "",
-      "Targets": [
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt75\"]/label",
-        "xpath=//div[5]/label",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt75 > label"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner",
-      "Value": "",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner",
-        "name=itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner\"]",
-        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner']",
-        "xpath=//div[5]/select",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt75Inner"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
-      "Value": "",
-      "Targets": [
-        "id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
-        "name=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
-        "xpath=//*[@id=\"input_itens:FormSelecaoMaterial:tbmateriais:j_idt71\"]",
-        "xpath=//input[@id='input_itens:FormSelecaoMaterial:tbmateriais:j_idt71']",
-        "xpath=//div[3]/input",
-        "css=#input_itens:FormSelecaoMaterial:tbmateriais:j_idt71"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "type",
-      "Target": "id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
-      "Value": "de",
-      "Targets": [
-        "id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
-        "name=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71",
-        "xpath=//*[@id=\"input_itens:FormSelecaoMaterial:tbmateriais:j_idt71\"]",
-        "xpath=//input[@id='input_itens:FormSelecaoMaterial:tbmateriais:j_idt71']",
-        "xpath=//div[3]/input",
-        "css=#input_itens:FormSelecaoMaterial:tbmateriais:j_idt71"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:j_idt75",
-      "Value": "",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:j_idt75",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:j_idt75\"]",
-        "xpath=//div[@id='itens:FormSelecaoMaterial:tbmateriais:j_idt75']",
-        "xpath=//div/div[5]",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:j_idt75"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-      "Value": "",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-        "name=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu\"]",
-        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu']",
-        "xpath=//div[2]/select",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "select",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-      "Value": "label=100",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-        "name=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu\"]",
-        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu']",
-        "xpath=//div[2]/select",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-      "Value": "",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-        "name=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu\"]",
-        "xpath=//select[@id='itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu']",
-        "xpath=//div[2]/select",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand",
-      "Value": "",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand",
-        "name=itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand\"]",
-        "xpath=//button[@id='itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand']",
-        "xpath=//div[2]/div/button",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:_pageLengthCommand"
-      ],
-      "Description": ""
-    },
-    {
-      "Command": "click",
-      "Target": "id=itens:FormSelecaoMaterial:tbmateriais:_applyFilters",
-      "Value": "",
-      "Targets": [
-        "id=itens:FormSelecaoMaterial:tbmateriais:_applyFilters",
-        "name=itens:FormSelecaoMaterial:tbmateriais:_applyFilters",
-        "xpath=//*[@id=\"itens:FormSelecaoMaterial:tbmateriais:_applyFilters\"]",
-        "xpath=//button[@id='itens:FormSelecaoMaterial:tbmateriais:_applyFilters']",
-        "xpath=//div/div[2]/button",
-        "css=#itens:FormSelecaoMaterial:tbmateriais:_applyFilters"
-      ],
-      "Description": ""
-    }
-  ]
-}
+// ============================================================
+// SIMPLUS - SOLICITAÇÃO DE MATERIAL DE CONSUMO
+// PARTE 1 + CATÁLOGO + FILTROS DE MATERIAL
+// ============================================================
+
+
+// ------------------------------------------------------------
+// 1. ABRIR SIMPLUS
+// ------------------------------------------------------------
+
+uiv.goto('https://app.simplus.ufv.br/user/solicitacao.jsf');
+
+uiv.log('PÁGINA DO SIMPLUS ABERTA', 'green');
+
+
+// ------------------------------------------------------------
+// 2. NOVA SOLICITAÇÃO
+// ------------------------------------------------------------
+
+uiv.$('id=solicitacoes:_adding');
+
+uiv.page.click('id=solicitacoes:_adding');
+
+uiv.log('NOVA SOLICITAÇÃO SELECIONADA', 'green');
+
+
+// ------------------------------------------------------------
+// 3. AVANÇAR PARA O FORMULÁRIO
+// ------------------------------------------------------------
+
+uiv.$('id=proxima1');
+
+uiv.page.click('id=proxima1');
+
+uiv.log('CHEGOU À ETAPA DO FORMULÁRIO', 'green');
+
+
+// ------------------------------------------------------------
+// 4. CUSTEIO
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt65Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "Custeio - Funcionamento F0")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "Custeio - Funcionamento F0")]'
+);
+
+uiv.log('CUSTEIO - FUNCIONAMENTO F0 SELECIONADO', 'green');
+
+
+// ------------------------------------------------------------
+// 5. OBJETIVO
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt75Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "02 - Fortalecer a política institucional de apoio acadêmico e pedagógico")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "02 - Fortalecer a política institucional de apoio acadêmico e pedagógico")]'
+);
+
+uiv.log('OBJETIVO SELECIONADO', 'green');
+
+
+// ------------------------------------------------------------
+// 6. ÁREA
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt78Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "Graduação e área administrativa")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "Graduação e área administrativa")]'
+);
+
+uiv.log('ÁREA SELECIONADA', 'green');
+
+
+// ------------------------------------------------------------
+// 7. PROGRAMA
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt81Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "19 - Ensino e Gestão Administrativa")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "19 - Ensino e Gestão Administrativa")]'
+);
+
+uiv.log('PROGRAMA SELECIONADO', 'green');
+
+
+// ------------------------------------------------------------
+// 8. MATERIAL DE CONSUMO
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'css=#select2-formnovoj_idt84Inner-container'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "Material de Consumo - MC")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "Material de Consumo - MC")]'
+);
+
+uiv.log('MATERIAL DE CONSUMO SELECIONADO', 'green');
+
+
+// ------------------------------------------------------------
+// 9. PESQUISAR ÓRGÃO
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'xpath=//*[@id="formnovo:orgaointeressado"]/div/span/span/span'
+);
+
+uiv.page.fill(
+    'xpath=/html/body/span/span/span/input',
+    'dec'
+);
+
+uiv.log('PESQUISA DE ÓRGÃO REALIZADA', 'green');
+
+
+// ------------------------------------------------------------
+// 10. DADOS DO INTERESSADO
+// ------------------------------------------------------------
+
+uiv.page.fill(
+    'id=input_formnovo:nomeinteressado',
+    'carlos pedro da silva ribeiro'
+);
+
+uiv.page.fill(
+    'id=input_formnovo:telinteressado',
+    '31996984678'
+);
+
+uiv.page.fill(
+    'id=input_formnovo:emailinteressado',
+    'carlos.pedro@ufv.br'
+);
+
+uiv.page.fill(
+    'id=input_formnovo:telsolicitante',
+    '3136126580'
+);
+
+
+// ------------------------------------------------------------
+// 11. SELECIONAR DEPARTAMENTO
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'xpath=//*[@id="formnovo:j_idt47"]/div/div'
+);
+
+uiv.page.click(
+    'xpath=//*[@id="formnovo:orgaointeressado"]/div/span/span/span'
+);
+
+uiv.$(
+    'xpath=//li[contains(., "Departamento de Engenharia Civil - DEC")]'
+);
+
+uiv.browser.click(
+    'xpath=//li[contains(., "Departamento de Engenharia Civil - DEC")]'
+);
+
+uiv.log('DEC SELECIONADO', 'green');
+
+
+// ------------------------------------------------------------
+// 12. LOCAL
+// ------------------------------------------------------------
+
+uiv.page.fill(
+    'id=input_formnovo:j_idt58',
+    'LESA - Laboratório de Engenharia Sanitária e Ambiental'
+);
+
+
+// ------------------------------------------------------------
+// 13. DESCRIÇÃO
+// ------------------------------------------------------------
+
+uiv.page.click('id=formnovo:j_idt59');
+
+uiv.page.fill(
+    'id=input_formnovo:j_idt59',
+    'Material de limpeza, higiene, papelaria.'
+);
+
+uiv.log('DESCRIÇÃO PREENCHIDA', 'green');
+
+
+// ------------------------------------------------------------
+// 14. CONCLUIR FORMULÁRIO PRINCIPAL
+// ------------------------------------------------------------
+
+uiv.$('id=j_idt88');
+
+uiv.page.click('id=j_idt88');
+
+uiv.log('FORMULÁRIO PRINCIPAL CONCLUÍDO', 'green');
+
+
+// ------------------------------------------------------------
+// 15. AGUARDAR ATUALIZAÇÃO DA ÁREA DE ITENS
+// ------------------------------------------------------------
+
+uiv.log('AGUARDANDO ATUALIZAÇÃO DA ÁREA DE ITENS...', 'yellow');
+
+
+// IMPORTANTE:
+// O ID correto do botão Catálogo nesta etapa é:
+//
+// itens:j_idt110
+//
+// NÃO é:
+// itens:j_idt97
+//
+
+uiv.$('id=itens:j_idt110');
+
+uiv.log('BOTÃO CATÁLOGO ENCONTRADO', 'green');
+
+
+// ------------------------------------------------------------
+// 16. CLICAR EM CATÁLOGO
+// ------------------------------------------------------------
+//
+// O botão possui:
+// onclick="BsF.ajax.callAjax(...)"
+//
+// Portanto usamos browser.click(), que reproduz o clique
+// real/trusted necessário para esse controle AJAX.
+//
+
+uiv.browser.click('id=itens:j_idt110');
+
+uiv.log('CATÁLOGO CLICADO', 'green');
+
+
+// ------------------------------------------------------------
+// 17. AGUARDAR TELA DE SELEÇÃO DE MATERIAL
+// ------------------------------------------------------------
+
+uiv.log('AGUARDANDO TELA DE SELEÇÃO DE MATERIAL...', 'yellow');
+
+uiv.$(
+    'id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71'
+);
+
+uiv.log('TELA DE SELEÇÃO DE MATERIAL ABERTA', 'green');
+
+
+// ------------------------------------------------------------
+// 18. CAMPO DE PESQUISA DO MATERIAL
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71'
+);
+
+uiv.page.fill(
+    'id=input_itens:FormSelecaoMaterial:tbmateriais:j_idt71',
+    'de'
+);
+
+uiv.log('PESQUISA DE MATERIAL PREENCHIDA: DE', 'green');
+
+
+// ------------------------------------------------------------
+// 19. FILTRO DE CLASSIFICAÇÃO
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt72Inner'
+);
+
+uiv.page.selectOption(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt72Inner',
+    'Despesas Correntes/Custeio/Consumo'
+);
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt72Inner'
+);
+
+uiv.log('CLASSIFICAÇÃO SELECIONADA', 'green');
+
+
+// ------------------------------------------------------------
+// 20. FILTRO "ATIVO"
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner'
+);
+
+uiv.page.selectOption(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner',
+    'Sim'
+);
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:j_idt79Inner'
+);
+
+uiv.log('FILTRO ATIVO = SIM', 'green');
+
+
+// ------------------------------------------------------------
+// 21. MOSTRAR 100 REGISTROS
+// ------------------------------------------------------------
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu'
+);
+
+uiv.page.selectOption(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu',
+    '100'
+);
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_pageLengthMenu'
+);
+
+uiv.log('QUANTIDADE DE REGISTROS = 100', 'green');
+
+
+// ------------------------------------------------------------
+// 22. APLICAR FILTROS
+// ------------------------------------------------------------
+
+uiv.$(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_applyFilters'
+);
+
+uiv.page.click(
+    'id=itens:FormSelecaoMaterial:tbmateriais:_applyFilters'
+);
+
+uiv.log('FILTROS APLICADOS', 'green');
+
+
+// ------------------------------------------------------------
+// FIM DA PARTE CONHECIDA
+// ------------------------------------------------------------
+
+uiv.log(
+    'FILTROS DE MATERIAL CONCLUÍDOS — PRONTO PARA A PRÓXIMA ETAPA',
+    'green'
+);
