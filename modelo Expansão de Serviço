@@ -1,0 +1,158 @@
+// ============================================================
+// EXPANSÃO DE SERVIÇOS - CENTRAL DE SERVIÇOS UFV
+// MODELO PARAMETRIZÁVEL
+// ============================================================
+//
+// Fluxo:
+// perfil → catálogo → expansão de todos os catálogos
+//
+// Para utilizar:
+// 1. Edite somente o bloco "CONFIGURAÇÃO DO USUÁRIO"
+// 2. Não altere o restante do código
+// ============================================================
+
+
+
+// ============================================================
+// CONFIGURAÇÃO DO USUÁRIO
+// ============================================================
+//
+// ALTERE SOMENTE OS VALORES ABAIXO
+// ============================================================
+
+const CONFIG = {
+
+    // --------------------------------------------------------
+    // Campus
+    // --------------------------------------------------------
+    //
+    // 1 = Campus Viçosa
+    //
+    // Caso utilize outro campus, altere o valor.
+    //
+    campus: '1',
+
+
+    // --------------------------------------------------------
+    // Perfil
+    // --------------------------------------------------------
+    //
+    // Informe exatamente o número do perfil que deve ser
+    // selecionado na tela.
+    //
+    perfil: '11230'
+
+
+};
+
+
+// ============================================================
+// 1. ABRIR A SOLICITAÇÃO
+// ============================================================
+
+uiv.goto(
+    `https://central-servicos.ufv.br/solicitacoes/criar?campus=${CONFIG.campus}`
+);
+
+uiv.log(
+    'PÁGINA INICIAL ABERTA',
+    'green'
+);
+
+
+// ============================================================
+// 2. AGUARDAR O PERFIL
+// ============================================================
+
+uiv.$(
+    `xpath=//*[normalize-space(text())="${CONFIG.perfil}"]`
+);
+
+uiv.log(
+    `PERFIL ${CONFIG.perfil} ENCONTRADO`,
+    'green'
+);
+
+
+// ============================================================
+// 3. SELECIONAR O PERFIL
+// ============================================================
+
+uiv.page.click(
+    `xpath=//*[normalize-space(text())="${CONFIG.perfil}"]`
+);
+
+uiv.log(
+    `PERFIL ${CONFIG.perfil} SELECIONADO`,
+    'green'
+);
+
+
+// ============================================================
+// 4. AGUARDAR O CATÁLOGO
+// ============================================================
+
+uiv.$(
+    'xpath=//a[contains(normalize-space(.),"Ver Catálogo de Serviços")]'
+);
+
+uiv.log(
+    'CATÁLOGO DE SERVIÇOS ENCONTRADO',
+    'green'
+);
+
+
+// ============================================================
+// 5. ABRIR O CATÁLOGO
+// ============================================================
+
+uiv.page.click(
+    'linkText=Ver Catálogo de Serviços...'
+);
+
+uiv.log(
+    'CATÁLOGO DE SERVIÇOS ABERTO',
+    'green'
+);
+
+
+// ============================================================
+// 6. EXPANDIR TODOS OS CATÁLOGOS
+// ============================================================
+
+const quantidade = uiv.evaluate(`
+    const paineis = document.querySelectorAll(
+        '#conteudo .panel-body.collapse[id^="catalogo_"]'
+    );
+
+    paineis.forEach(painel => {
+        painel.classList.add('in');
+        painel.setAttribute('aria-expanded', 'true');
+        painel.style.height = '';
+    });
+
+    const botoes = document.querySelectorAll(
+        '#conteudo .panel-heading[data-toggle="collapse"][data-target^="#catalogo_"]'
+    );
+
+    botoes.forEach(botao => {
+        botao.setAttribute('aria-expanded', 'true');
+    });
+
+    return paineis.length;
+`);
+
+uiv.log(
+    `CATÁLOGOS EXPANDIDOS: ${quantidade}`,
+    'green'
+);
+
+
+// ============================================================
+// 7. FINALIZAÇÃO
+// ============================================================
+
+uiv.log(
+    'EXPANSÃO DOS CATÁLOGOS CONCLUÍDA',
+    'green'
+);
