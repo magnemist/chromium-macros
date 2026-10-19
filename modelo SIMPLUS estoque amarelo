@@ -10,14 +10,14 @@
 // ============================================================
 
 const CONFIG = {
-    nomeInteressado: 'carlos pedro da silva ribeiro',
-    telefoneInteressado: '31996984678',
-    emailInteressado: 'carlos.pedro@ufv.br',
-    telefoneSolicitante: '3136126580',
-    orgao: 'Departamento de Engenharia Civil - DEC',
-    local: 'LESA - Laboratório de Engenharia Sanitária e Ambiental',
-    descricao: 'Material de limpeza, higiene, papelaria.',
-    pesquisaOrgao: 'dec',
+    nomeInteressado: 'nome minúsculo',
+    telefoneInteressado: 'telefone sem espaço',
+    emailInteressado: 'email',
+    telefoneSolicitante: 'telefone sem espaço',
+    orgao: 'Departamento - Sigla',
+    local: 'Sigla - lugar',
+    descricao: 'Tipo de material',
+    pesquisaOrgao: 'sigla minúscula',
     pesquisaMaterial: 'de',
     classificacaoMaterial: 'Despesas Correntes/Custeio/Consumo',
     materialAtivo: 'Sim',
